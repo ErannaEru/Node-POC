@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<header>
+	<div align="center" style="background-color:gray"> 
+		<b>DCX TEchnologies </b>
+	</div>
+</header>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl" >
+	<table>
+		<tr ng-repeat="x in chapters" >
+			<td> {{ x }} </td>
+		</tr>
+	</table>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

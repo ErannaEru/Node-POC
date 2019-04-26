@@ -1,0 +1,21 @@
+Emplouee Records::
+==================
+
+select * from mydb.employee;
+
+CREATE TABLE `mydb`.`employee` (
+  `eid` INT NOT NULL,
+  `emp_chapter_id` INT NOT NULL,
+  `emp_name` VARCHAR(45) NULL,
+  `emp_age` INT NULL,
+  `emp_designation` VARCHAR(45) NULL,
+  `emp_salary` FLOAT NULL,
+  PRIMARY KEY (`eid`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+insert into mydb.employee(`eid`,`emp_chapter_id`,  `emp_name`, `emp_age`, `emp_designation`,  `emp_salary` )
+values (1, 1, 'Ajay', 40, 'Agile/Scrum Manager', 100000);
+
+insert into mydb.employee(`eid`,`emp_chapter_id`,  `emp_name`, `emp_age`, `emp_designation`,  `emp_salary` )
+values (2, 2, 'Ashok', 40, 'Full Stack Manager', 100000);
